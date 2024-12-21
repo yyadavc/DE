@@ -1,0 +1,58 @@
+[
+
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Calendar.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Calendar",
+        "Fname" : "AdventureWorks_Calendar.csv"
+    },
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Customers.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Customers",
+        "Fname" : "AdventureWorks_Customers.csv"
+    },
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Product_Subcategories.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Product_Subcategories",
+        "Fname" : "AdventureWorks_Product_Subcategories.csv"
+    },
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Products.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Products",
+        "Fname" : "AdventureWorks_Products.csv"
+    },
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Returns.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Returns",
+        "Fname" : "AdventureWorks_Returns.csv"
+    },
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2015.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Sales_2015",
+        "Fname" : "AdventureWorks_Sales_2015.csv"
+    },
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2016.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Sales_2016",
+        "Fname" : "AdventureWorks_Sales_2016.csv"
+    },
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2017.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Sales_2017",
+        "Fname" : "AdventureWorks_Sales_2017.csv"
+    },
+    {
+        "relative_url" : "yyadavc/DE/blob/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Territories.csv",
+        "Cname" : "bronze",
+        "Dname" : "AdventureWorks_Territories",
+        "Fname" : "AdventureWorks_Territories.csv"
+    }
+    
+]
