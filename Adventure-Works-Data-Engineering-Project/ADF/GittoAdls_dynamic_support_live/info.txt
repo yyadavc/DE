@@ -1,0 +1,6 @@
+selected resource name:		GittoAdls_dynamic
+selected resource type:		pipeline
+factory name:			AW-ADF-PR
+factory location:		southindia
+subscription id:		4fdec020-926d-4b97-a295-ba456fa6119d
+time of download (UTC):		Mon, 23 Dec 2024 14:56:33 GMT
