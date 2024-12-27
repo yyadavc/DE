@@ -86,10 +86,15 @@ df_AdventureWorks_Territories = spark.read.format("csv").option("header", "true"
 
 # COMMAND ----------
 
+# DBTITLE 1,IMPORT LIB
 import pyspark.sql.functions import*
 import pyspark.sql.types import*
 
 # COMMAND ----------
 
-df.withcoulmn('Month',month(col('Date')))
-    withColumn('Year',year(col('Date')))
+df_cal =  df.withcoulmn('Month',month(col('Date')))
+            withColumn('Year',year(col('Date')))
+
+# COMMAND ----------
+
+
