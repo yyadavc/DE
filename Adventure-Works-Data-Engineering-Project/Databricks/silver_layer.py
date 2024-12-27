@@ -5,7 +5,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ADLS CONNECTION
+# MAGIC [ADLS CONNECTION](url)
 
 # COMMAND ----------
 
@@ -22,7 +22,7 @@ dbutils.fs.ls("abfss://bronze@awidhdatalake.dfs.core.windows.net/")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC DATA LOADING
+# MAGIC [DATA LOADING](url)
 
 # COMMAND ----------
 
@@ -82,19 +82,28 @@ df_AdventureWorks_Territories = spark.read.format("csv").option("header", "true"
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC TRANSFORMATION
+# MAGIC [TRANSFORMATION](url)
 
 # COMMAND ----------
 
 # DBTITLE 1,IMPORT LIB
-import pyspark.sql.functions import*
-import pyspark.sql.types import*
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
 
 # COMMAND ----------
 
-df_cal =  df.withcoulmn('Month',month(col('Date')))
-            withColumn('Year',year(col('Date')))
+# MAGIC %md
+# MAGIC CALENDER TRANSFORMATION
 
 # COMMAND ----------
 
+df_cal =  df_AdventureWorks_Calendar.withColumn('Month', month(col('Date')))\
+                                    .withColumn('Year', year(col('Date')))
+
+# COMMAND ----------
+
+df_cal.write.format('parquet')\
+    .mode('append')\
+    .option('path','abfss://silver@awidhdatalake.dfs.core.windows.net/AdventureWorks_Calendar')\
+    .save()
 
