@@ -21,4 +21,75 @@ dbutils.fs.ls("abfss://bronze@awidhdatalake.dfs.core.windows.net/")
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC DATA LOADING
 
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Calendar
+df_AdventureWorks_Calendar = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Calendar")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Customers
+df_AdventureWorks_Customers = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Customers")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Product_Categories
+df_AdventureWorks_Product_Categories = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Product_Categories")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Product_Categories
+df_AdventureWorks_Product_Categories = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Product_Categories")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Product_Subcategories
+df_AdventureWorks_Product_Categories = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Product_Subcategories")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Products
+df_AdventureWorks_Products = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Products")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Returns
+df_AdventureWorks_Returns = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Products")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Sales_2015
+df_AdventureWorks_Sales_2015 = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Sales_2015")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Sales_2016
+df_AdventureWorks_Sales_2016 = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Sales_2016")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Sales_2017
+df_AdventureWorks_Sales_2017 = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Sales_2017")
+
+# COMMAND ----------
+
+# DBTITLE 1,AdventureWorks_Territories
+df_AdventureWorks_Territories = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Territories")
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC TRANSFORMATION
+
+# COMMAND ----------
+
+import pyspark.sql.functions import*
+import pyspark.sql.types import*
+
+# COMMAND ----------
+
+df.withcoulmn('Month',month(col('Date')))
+    withColumn('Year',year(col('Date')))
