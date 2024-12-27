@@ -18,3 +18,7 @@ spark.conf.set("fs.azure.account.oauth2.client.endpoint.awidhdatalake.dfs.core.w
 # COMMAND ----------
 
 dbutils.fs.ls("abfss://bronze@awidhdatalake.dfs.core.windows.net/")
+
+# COMMAND ----------
+
+
