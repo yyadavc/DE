@@ -1,6 +1,11 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC # **SILVER** **LAYER**
+# MAGIC #  SILVER LAYER
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ADLS CONNECTION
 
 # COMMAND ----------
 
