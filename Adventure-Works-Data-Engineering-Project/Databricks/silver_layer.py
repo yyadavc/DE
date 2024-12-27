@@ -9,6 +9,10 @@
 
 # COMMAND ----------
 
+SVP-SECRET = 'MKG8Qs2PixZR595_-xEslE4XkJGVeXn5F2mdyZ'
+
+# COMMAND ----------
+
 spark.conf.set("fs.azure.account.auth.type.awidhdatalake.dfs.core.windows.net", "OAuth")
 spark.conf.set("fs.azure.account.oauth.provider.type.awidhdatalake.dfs.core.windows.net", "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider")
 spark.conf.set("fs.azure.account.oauth2.client.id.awidhdatalake.dfs.core.windows.net", "2d1b308e-8dcf-4898-8f42-10893d11fd05")
