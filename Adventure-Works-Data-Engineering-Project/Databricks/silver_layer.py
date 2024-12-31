@@ -5,7 +5,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC [ADLS CONNECTION](url)
+# MAGIC > [ADLS CONNECTION](url)
 
 # COMMAND ----------
 
@@ -22,7 +22,7 @@ dbutils.fs.ls("abfss://bronze@awidhdatalake.dfs.core.windows.net/")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC [DATA LOADING](url)
+# MAGIC > [DATA LOADING](url)
 
 # COMMAND ----------
 
@@ -47,7 +47,7 @@ df_AdventureWorks_Product_Categories = spark.read.format("csv").option("header",
 # COMMAND ----------
 
 # DBTITLE 1,AdventureWorks_Product_Subcategories
-df_AdventureWorks_Product_Categories = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Product_Subcategories")
+df_AdventureWorks_Product_Subcategories = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("abfss://bronze@awidhdatalake.dfs.core.windows.net/AdventureWorks_Product_Subcategories")
 
 # COMMAND ----------
 
@@ -82,7 +82,7 @@ df_AdventureWorks_Territories = spark.read.format("csv").option("header", "true"
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC [TRANSFORMATION](url)
+# MAGIC > [TRANSFORMATION](url)
 
 # COMMAND ----------
 
@@ -93,7 +93,7 @@ from pyspark.sql.types import *
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC CALENDER TRANSFORMATION
+# MAGIC [CALENDER TRANSFORMATION](url)
 
 # COMMAND ----------
 
@@ -107,3 +107,39 @@ df_cal.write.format('parquet')\
     .option('path','abfss://silver@awidhdatalake.dfs.core.windows.net/AdventureWorks_Calendar')\
     .save()
 
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC [CUSTOMER TRANSFORMATION](url)
+
+# COMMAND ----------
+
+dfcus = df_AdventureWorks_Customers.withColumn('FULLNAME',concat_ws(' ',df_AdventureWorks_Customers.Prefix,df_AdventureWorks_Customers.FirstName,df_AdventureWorks_Customers.LastName))
+
+# COMMAND ----------
+
+display(dfcus)
+
+# COMMAND ----------
+
+dfcus.write.format('parquet')\
+    .mode('append')\
+    .option('path','abfss://silver@awidhdatalake.dfs.core.windows.net/AdventureWorks_Customers')\
+    .save()
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC [Product_Subcategories](url)
+
+# COMMAND ----------
+
+df_sub_cat = df_AdventureWorks_Product_Subcategories
+
+# COMMAND ----------
+
+df_sub_cat.write.format('parquet')\
+    .mode('append')\
+    .option('path','abfss://silver@awidhdatalake.dfs.core.windows.net/AdventureWorks_Product_Subcategories')\
+    .save()
