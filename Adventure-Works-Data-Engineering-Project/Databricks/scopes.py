@@ -20,4 +20,4 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC databricks secrets put --scope AW-PR --key secret --string-value "MKG8Qs2PixZR595_-xEslE4XkJGVeXn5F2mdyZ"
+# MAGIC databricks secrets put --scope AW-PR --key secret --string-value "MKG8Qs2PixZR595_-xEslE4XkJGVeXn5F2md"
