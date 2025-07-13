@@ -1,64 +1,54 @@
 [
 
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Calendar.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Calendar",
-        "Fname" : "AdventureWorks_Calendar.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Calendar.csv",  
+        "p_sink_folder" : "AdventureWorks_Calendar",
+        "p_file_name" : "AdventureWorks_Calendar.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Customers.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Customers",
-        "Fname" : "AdventureWorks_Customers.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Customers.csv",        
+        "p_sink_folder" : "AdventureWorks_Customers",
+        "p_file_name" : "AdventureWorks_Customers.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Product_Categories.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Product_Categories",
-        "Fname" : "AdventureWorks_Product_Categories.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Product_Categories.csv",        
+        "p_sink_folder" : "AdventureWorks_Product_Categories",
+        "p_file_name" : "AdventureWorks_Product_Categories.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Product_Subcategories.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Product_Subcategories",
-        "Fname" : "AdventureWorks_Product_Subcategories.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Product_Subcategories.csv",        
+        "p_sink_folder" : "AdventureWorks_Product_Subcategories",
+        "p_file_name" : "AdventureWorks_Product_Subcategories.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Products.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Products",
-        "Fname" : "AdventureWorks_Products.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Products.csv",        
+        "p_sink_folder" : "AdventureWorks_Products",
+        "p_file_name" : "AdventureWorks_Products.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Returns.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Returns",
-        "Fname" : "AdventureWorks_Returns.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Returns.csv",        
+        "p_sink_folder" : "AdventureWorks_Returns",
+        "p_file_name" : "AdventureWorks_Returns.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2015.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Sales_2015",
-        "Fname" : "AdventureWorks_Sales_2015.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2015.csv",        
+        "p_sink_folder" : "AdventureWorks_Sales_2015",
+        "p_file_name" : "AdventureWorks_Sales_2015.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2016.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Sales_2016",
-        "Fname" : "AdventureWorks_Sales_2016.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2016.csv",        
+        "p_sink_folder" : "AdventureWorks_Sales_2016",
+        "p_file_name" : "AdventureWorks_Sales_2016.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2017.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Sales_2017",
-        "Fname" : "AdventureWorks_Sales_2017.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Sales_2017.csv",        
+        "p_sink_folder" : "AdventureWorks_Sales_2017",
+        "p_file_name" : "AdventureWorks_Sales_2017.csv"
     },
     {
-        "relative_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Territories.csv",
-        "Cname" : "bronze",
-        "Dname" : "AdventureWorks_Territories",
-        "Fname" : "AdventureWorks_Territories.csv"
+        "p_rel_url" : "yyadavc/DE/refs/heads/master/Adventure-Works-Data-Engineering-Project/Data/AdventureWorks_Territories.csv",        
+        "p_sink_folder" : "AdventureWorks_Territories",
+        "p_file_name" : "AdventureWorks_Territories.csv"
     }
     
 ]
